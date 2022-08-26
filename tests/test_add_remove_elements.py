@@ -23,7 +23,7 @@ def test_remove_functionality(browser):
     add_page.loadPage()
     for i in range(10):
         add_page.clickAddButton()
-        assert_that(add_page.getNumberOfDeleteButton()).is_equal_to(i)
+        assert_that(add_page.getNumberOfDeleteButton()).is_equal_to(10)
     for i in range(10):
         add_page.clickFirstDeleteButton()
-        assert_that(add_page.getNumberOfDeleteButton()).is_equal_to(10 - i)
+        assert_that(add_page.getNumberOfDeleteButton()).is_equal_to(10-i)
